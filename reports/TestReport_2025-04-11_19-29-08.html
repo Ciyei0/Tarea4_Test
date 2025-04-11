@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pruebas Automatizadas - MedicalWeb</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <h2 class="text-capitalize">Pruebas Automatizadas - MedicalWeb</h2>
+                <p class='attribute'><strong>Start Time: </strong>2025-04-11 19:29:08</p>
+                <p class='attribute'><strong>Duration: </strong>84.17 s</p>
+                <p class='attribute'><strong>Summary: </strong>Total: 6, Pass: 4, Error: 2</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-10 col-md-10">
+                <table class='table table-hover table-responsive'>
+                    <thead>
+                        <tr>
+                            <th>__main__.MedicalWebTest</th>
+                            <th>Status</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class='warning'>
+                            <td class="col-xs-10">test_1_agendar_cita</td>
+                            <td class="col-xs-1">
+                                <span class="label label-warning" style="display:block;width:40px;">Error</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p style="color:maroon;">TimeoutException: Message: 
+Stacktrace:
+	GetHandleVerifier [0x00E580E3+60707]
+	GetHandleVerifier [0x00E58124+60772]
+	(No symbol) [0x00C80683]
+	(No symbol) [0x00CC8660]
+	(No symbol) [0x00CC89FB]
+	(No symbol) [0x00D11022]
+	(No symbol) [0x00CED094]
+	(No symbol) [0x00D0E824]
+	(No symbol) [0x00CECE46]
+	(No symbol) [0x00CBC5D3]
+	(No symbol) [0x00CBD424]
+	GetHandleVerifier [0x0109BBC3+2435075]
+	GetHandleVerifier [0x01097163+2416035]
+	GetHandleVerifier [0x010B350C+2531660]
+	GetHandleVerifier [0x00E6F1B5+155125]
+	GetHandleVerifier [0x00E75B5D+182173]
+	GetHandleVerifier [0x00E5F9B8+91640]
+	GetHandleVerifier [0x00E5FB60+92064]
+	GetHandleVerifier [0x00E4A620+4704]
+	BaseThreadInitThunk [0x770FFCC9+25]
+	RtlGetAppContainerNamedObjectPath [0x774F82AE+286]
+	RtlGetAppContainerNamedObjectPath [0x774F827E+238]
+</p><p style="color:maroon;">Traceback (most recent call last):
+  File "d:\ITLA\prog3\Tarea4_Test\test.py", line 107, in test_1_agendar_cita
+    WebDriverWait(driver, 30).until(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        EC.presence_of_element_located((By.XPATH, "//*[contains(text(),'cita ha sido agendada')]"))
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\raymo\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\support\wait.py", line 146, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+Stacktrace:
+	GetHandleVerifier [0x00E580E3+60707]
+	GetHandleVerifier [0x00E58124+60772]
+	(No symbol) [0x00C80683]
+	(No symbol) [0x00CC8660]
+	(No symbol) [0x00CC89FB]
+	(No symbol) [0x00D11022]
+	(No symbol) [0x00CED094]
+	(No symbol) [0x00D0E824]
+	(No symbol) [0x00CECE46]
+	(No symbol) [0x00CBC5D3]
+	(No symbol) [0x00CBD424]
+	GetHandleVerifier [0x0109BBC3+2435075]
+	GetHandleVerifier [0x01097163+2416035]
+	GetHandleVerifier [0x010B350C+2531660]
+	GetHandleVerifier [0x00E6F1B5+155125]
+	GetHandleVerifier [0x00E75B5D+182173]
+	GetHandleVerifier [0x00E5F9B8+91640]
+	GetHandleVerifier [0x00E5FB60+92064]
+	GetHandleVerifier [0x00E4A620+4704]
+	BaseThreadInitThunk [0x770FFCC9+25]
+	RtlGetAppContainerNamedObjectPath [0x774F82AE+286]
+	RtlGetAppContainerNamedObjectPath [0x774F827E+238]
+
+</p>
+                            </td>
+                        </tr>
+                        <tr class='success'>
+                            <td class="col-xs-10">test_2_iniciar_sesion</td>
+                            <td class="col-xs-1">
+                                <span class="label label-success" style="display:block;width:40px;">Pass</span>
+                            </td>
+                            <td class="col-xs-1">
+                            </td>
+                        </tr>
+                        <tr class='success'>
+                            <td class="col-xs-10">test_3a_ver_citas</td>
+                            <td class="col-xs-1">
+                                <span class="label label-success" style="display:block;width:40px;">Pass</span>
+                            </td>
+                            <td class="col-xs-1">
+                            </td>
+                        </tr>
+                        <tr class='warning'>
+                            <td class="col-xs-10">test_3b_editar_cita</td>
+                            <td class="col-xs-1">
+                                <span class="label label-warning" style="display:block;width:40px;">Error</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p style="color:maroon;">UnexpectedAlertPresentException: Alert Text: ¿Estás seguro de eliminar esta cita?
+Message: unexpected alert open: {Alert text : ¿Estás seguro de eliminar esta cita?}
+  (Session info: chrome=135.0.7049.85)
+Stacktrace:
+	GetHandleVerifier [0x00E580E3+60707]
+	GetHandleVerifier [0x00E58124+60772]
+	(No symbol) [0x00C80683]
+	(No symbol) [0x00D0F153]
+	(No symbol) [0x00CECE46]
+	(No symbol) [0x00CBC5D3]
+	(No symbol) [0x00CBD424]
+	GetHandleVerifier [0x0109BBC3+2435075]
+	GetHandleVerifier [0x01097163+2416035]
+	GetHandleVerifier [0x010B350C+2531660]
+	GetHandleVerifier [0x00E6F1B5+155125]
+	GetHandleVerifier [0x00E75B5D+182173]
+	GetHandleVerifier [0x00E5F9B8+91640]
+	GetHandleVerifier [0x00E5FB60+92064]
+	GetHandleVerifier [0x00E4A620+4704]
+	BaseThreadInitThunk [0x770FFCC9+25]
+	RtlGetAppContainerNamedObjectPath [0x774F82AE+286]
+	RtlGetAppContainerNamedObjectPath [0x774F827E+238]
+</p><p style="color:maroon;">Traceback (most recent call last):
+  File "d:\ITLA\prog3\Tarea4_Test\test.py", line 194, in test_3b_editar_cita
+    WebDriverWait(driver, 30).until(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        EC.presence_of_element_located((By.XPATH, "//*[contains(text(),'Datos guardados')]"))
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\raymo\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\support\wait.py", line 137, in until
+    value = method(self._driver)
+  File "C:\Users\raymo\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\support\expected_conditions.py", line 110, in _predicate
+    return driver.find_element(*locator)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\raymo\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 898, in find_element
+    return self.execute(Command.FIND_ELEMENT, {"using": by, "value": value})["value"]
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\raymo\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 429, in execute
+    self.error_handler.check_response(response)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\raymo\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 231, in check_response
+    raise exception_class(message, screen, stacktrace, alert_text)  # type: ignore[call-arg]  # mypy is not smart enough here
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+selenium.common.exceptions.UnexpectedAlertPresentException: Alert Text: ¿Estás seguro de eliminar esta cita?
+Message: unexpected alert open: {Alert text : ¿Estás seguro de eliminar esta cita?}
+  (Session info: chrome=135.0.7049.85)
+Stacktrace:
+	GetHandleVerifier [0x00E580E3+60707]
+	GetHandleVerifier [0x00E58124+60772]
+	(No symbol) [0x00C80683]
+	(No symbol) [0x00D0F153]
+	(No symbol) [0x00CECE46]
+	(No symbol) [0x00CBC5D3]
+	(No symbol) [0x00CBD424]
+	GetHandleVerifier [0x0109BBC3+2435075]
+	GetHandleVerifier [0x01097163+2416035]
+	GetHandleVerifier [0x010B350C+2531660]
+	GetHandleVerifier [0x00E6F1B5+155125]
+	GetHandleVerifier [0x00E75B5D+182173]
+	GetHandleVerifier [0x00E5F9B8+91640]
+	GetHandleVerifier [0x00E5FB60+92064]
+	GetHandleVerifier [0x00E4A620+4704]
+	BaseThreadInitThunk [0x770FFCC9+25]
+	RtlGetAppContainerNamedObjectPath [0x774F82AE+286]
+	RtlGetAppContainerNamedObjectPath [0x774F827E+238]
+
+</p>
+                            </td>
+                        </tr>
+                        <tr class='success'>
+                            <td class="col-xs-10">test_3c_eliminar_cita</td>
+                            <td class="col-xs-1">
+                                <span class="label label-success" style="display:block;width:40px;">Pass</span>
+                            </td>
+                            <td class="col-xs-1">
+                            </td>
+                        </tr>
+                        <tr class='success'>
+                            <td class="col-xs-10">test_3d_logout</td>
+                            <td class="col-xs-1">
+                                <span class="label label-success" style="display:block;width:40px;">Pass</span>
+                            </td>
+                            <td class="col-xs-1">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">
+                                Total: 6, Pass: 4, Error: 2 -- Duration: 84.17 s
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('td').on('click', '.btn', function(e){
+                e.preventDefault();
+                e.stopImmediatePropagation();
+                var $this = $(this);
+                var $nextRow = $this.closest('tr').next('tr');
+                $nextRow.slideToggle("fast");
+                $this.text(function(i, text){
+                    if (text === 'View') {
+                        return 'Hide';
+                    } else {
+                        return 'View';
+                    };
+                });
+            });
+        });
+    </script>
+</body>
+</html
